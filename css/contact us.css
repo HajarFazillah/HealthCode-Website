@@ -1,0 +1,252 @@
+*{
+		margin: 0;
+		padding: 0;
+		font-family: "Lato", sans-serif;
+	}
+
+	body, html{
+		height:100%;
+		margin:0;
+		font-size:16px;
+		font-family:"Lato", sans-serif;
+		font-weight:400;
+		line-height:1.8em;
+		color:#666;
+	}
+	
+	Header{
+		width: 100%;
+		height: 80px;
+		background-color:#000;
+		line-height: 80px;
+		z-index: 12;
+		position: fixed;
+	}
+
+	Header ul{
+		float: right;
+		margin-right: 30px;
+	}
+
+	Header ul li{
+		list-style-type: none;
+		display: inline-block;
+	}
+
+	Header ul li a{
+		text-decoration: none;
+		color: #fff;
+		padding: 30px; 
+	}
+
+	.section{
+		text-align:center;
+		padding:50px 100px;
+	}
+
+	.section-light{
+		background-color:#f4f4f4;
+		color:#666;
+	}
+
+	.pimg1{
+		position:relative;
+		opacity:0.70;
+		background-position:center;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-image:url('../img/service2.jpeg');
+		min-height:100%;
+	/*
+		fixed = parallax
+		scroll = normal
+	*/
+		background-attachment:fixed;
+	}
+
+	.ptext{
+		position:absolute;
+		top:50%;
+		width:100%;
+		text-align:center;
+		color:#000;
+		font-size:27px;
+		letter-spacing:8px;
+		text-transform:uppercase;
+	}
+
+	.ptext .border{
+		background-color:#111;
+		color:#fff;
+		padding:20px;
+	}
+
+	.section section-light{
+		font-weight: normal;
+	}
+
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	.text{
+		float: left 10px;
+		background-color: #F5F5F5;
+		border: 1px solid #777;
+		border-radius: 5px;
+	}
+
+	.form{
+		background: #F5F5F5;
+		color: #434343;
+		text-align: center;
+	}
+
+	tr, td{
+		text-align: left;
+		height: 50px;
+	}
+	
+	
+	/*apply design for input fields*/
+	input[type=text], input[type=email],
+	input[type=number],input[type=subject],
+	input[type=category], input[type=message]{
+		width: 80%;
+		margin: 5px 0;
+		border: 1px solid black;
+		font-size: 16px;
+		padding:5px 5px;
+		border-radius:6px;
+	}
+	
+	/*apply design for input fields when there are in used
+	eg. entering data*/
+	input[type=text]:focus, input[type=email]:focus,
+	input[type=number]:focus,input[type=subject]:focus,
+	input[type=category]:focus, input[type=message]:focus{
+		border: 2px solid gold;
+		outline: none;
+	}
+	
+	/*apply design for textarea*/
+	textarea{
+		margin: 5px 0;
+		border: none;
+		border: 2px solid black;
+		font-size: 16px;
+	}
+	
+	textarea:focus{
+		border: 2px solid black;
+		outline: none;
+	}
+	
+	fieldset{
+		max-width:500px;
+		border: 1px solid magenta;
+	}
+	
+	/*apply design for drop down list and listbox*/
+	select{
+		width: 80%;
+		border: none;
+		border: 1px solid black;
+		font-size: 16px;
+	}
+	/*apply design for drop down list and listbox*/
+	select{
+		border: 0;
+		border-bottom: 1px solid black;
+		outline: none;
+	}
+	/*apply design for button*/
+	input[type=submit]{
+		background-color: none;
+		border: 2px solid black;
+		color: black;
+		padding: 16px 32px;
+		text-decoration: none;
+		margin: 4px 2px;
+		cursor: pointer;
+		font-size: 16px;
+	}
+	/*apply effect for when it is in used*/
+	input[type=submit]:hover {
+		background-color: skyBlue;
+		color: navy;
+	}
+
+	.text-effect{
+		font-weight: bold;
+		color: black;
+		text-align: center;
+		opacity: 0.9;
+		font-size: 26px;
+	}
+	
+/*----footer----*/
+
+	#footer{
+		padding: 20px 0 10px;
+	}
+	hr{
+		width: 90%;
+		border: 0;
+		border-top: 1px solid #f67c92;
+	}
+	.footer-row{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.footer-left-col{
+		flex-basis:80%;
+		margin-top: 20px;
+	}
+	.footer-links{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.link-title h4{
+		color: #fab3c4;
+		margin-bottom: 10px;
+	}
+	.link-title small{
+		font-size: 13px;
+		color: #777;
+	}
+	.footer-info{
+		display: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.footer-logo img{
+		width: 100px;
+	}
+	.hr{
+		flex-basis: 100%;
+	}
+	
+/*----social icons----*/
+  
+	.social-icons{
+		width: 50px;
+		position: fixed;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		z-index: 1;
+	}
+	.social-icons img{
+		display: block;
+		width: 20px;
+		margin: 0 auto 20px;
+		cursor: pointer;
+	}
+  
+	

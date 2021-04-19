@@ -1,0 +1,293 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body, html{
+  height:100%;
+  margin:0;
+  justify-content: center;
+  align-items: center;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+Header{
+  width: 100%;
+  height: 80px;
+  background-color:#000;
+  line-height: 80px;
+  z-index: 12;
+  position: fixed;
+}
+
+Header ul{
+  float: right;
+  margin-right: 30px;
+}
+
+Header ul li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+Header ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px; 
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/serviceheader.jpg');
+  min-height:100%;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+.section section-light{
+  font-weight: normal;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.container .box{
+  position: relative;
+  width: 350px;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0,.1);
+  border-radius: 4px;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container .box::before
+{
+content: '';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255, 255, 255, .2);
+}
+
+.container .box .icon
+{
+position: relative;
+width: 80px;
+height: 80px;
+color: #fff;
+background: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-radius: 50%;
+font-size: 40px;
+font-weight: 700;
+transition: 1s;
+}
+
+.container .box:nth-child(1) .icon
+{
+box-shadow: 0 0 0 0 #e91e63;
+background: #e91e63;
+}
+
+.container .box:nth-child(1):hover .icon
+{
+box-shadow: 0 0 0 400px #e91e63;
+
+}
+
+.container .box:nth-child(2) .icon
+{
+box-shadow: 0 0 0 0 #23e629;
+background: #23e629;
+}
+
+.container .box:nth-child(2):hover .icon
+{
+box-shadow: 0 0 0 400px #23e629;
+
+}
+
+.container .box:nth-child(3) .icon
+{
+box-shadow: 0 0 0 0 #2196f3;
+background: #2196f3;
+}
+
+.container .box:nth-child(3):hover .icon
+{
+box-shadow: 0 0 0 400px #2196f3;
+
+}
+
+.container .box .content
+{
+position: relative;
+z-index: 1;
+transition: 0.5s;
+}
+
+.container .box:hover .content
+{
+color: #fff;
+
+}
+
+.container .box .content h3
+{
+font-size: 20px;
+margin: 10px 0;
+padding: 0;
+}
+
+.container .box .content p
+{
+margin: 0;
+padding: 0;
+}
+
+.container .content a{
+display: inline-block;
+padding: 10px 20px;
+background: #fff;
+border-radius: 4px;
+text-decoration: none;
+color: #000;
+font-weight: 500;
+margin-top: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+/*----footer----*/
+
+	#footer{
+		padding: 20px 0 10px;
+	}
+	hr{
+		width: 90%;
+		border: 0;
+		border-top: 1px solid #f67c92;
+	}
+	.footer-row{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.footer-left-col{
+		flex-basis:80%;
+		margin-top: 20px;
+	}
+	.footer-links{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.link-title h4{
+		color: #fab3c4;
+		margin-bottom: 10px;
+	}
+	.link-title small{
+		font-size: 13px;
+		color: #777;
+	}
+	.footer-info{
+		display: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.footer-logo img{
+		width: 100px;
+	}
+	.hr{
+		flex-basis: 100%;
+	}
+	
+/*----social icons----*/
+  
+	.social-icons{
+		width: 50px;
+		position: fixed;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		z-index: 1;
+	}
+	.social-icons img{
+		display: block;
+		width: 20px;
+		margin: 0 auto 20px;
+		cursor: pointer;
+	}
+  
